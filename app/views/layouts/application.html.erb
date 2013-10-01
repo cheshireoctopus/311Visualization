@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ThreeOneOneGmaps</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+  <h1>NYC 3-1-1 Data</h1>
+
+  <nav>
+  <ul>
+      <li><%= link_to "Home", home_path %></li>
+      <li>/</li>
+      <li><%= link_to "Visualize All", maps_all_path %></li>
+      <li>/</li>
+      <li><%= link_to "Loud Music/Party", maps_party_path %></li>
+      <li>/</li>
+      <li><%= link_to "Dirty Sidewalk", maps_dirty_sidewalk_path %></li>
+      <li>/</li>
+      <li><%= link_to "Graffiti", maps_graffiti_path %></li>
+      <li>/</li>
+      <li><%= link_to "Street Light Out", maps_street_light_path %></li>
+  </ul>
+  </nav>
+
+<%= yield %>
+
+</body>
+</html>
