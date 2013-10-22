@@ -6,7 +6,6 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
 Complaint.delete_all
 
 
@@ -15,8 +14,6 @@ complaint_records = HTTParty.get('http://data.cityofnewyork.us/resource/erm2-nwe
 
 
 complaint_records.each do |complaint_record|
-
-  # complaint_record
 
   new_complaint = Complaint.new
 
