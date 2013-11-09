@@ -1,5 +1,8 @@
 class MapsController < ApplicationController
 
+  def about
+  end
+
   def view
     @complaints = Complaint.all
   end
@@ -43,5 +46,6 @@ class MapsController < ApplicationController
       end
     end
   end
+
 
 end

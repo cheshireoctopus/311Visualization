@@ -10,35 +10,28 @@
 </head>
 <body>
 
-  <h1>NYC 3-1-1 Data</h1>
+  <h1><%= link_to "NYC 3-1-1 Data", home_path %></h1>
 
+  <!-- <p id="last_update">Last Updated:</p> -->
   <nav>
-  <ul>
-      <li><%= link_to "Home", home_path %></li>
-      <li>/</li>
-      <li><%= link_to "Visualize All", maps_all_path %></li>
-      <li>/</li>
-      <li><%= link_to "Loud Music/Party", maps_party_path %></li>
-      <li>/</li>
-      <li><%= link_to "Dirty Sidewalk", maps_dirty_sidewalk_path %></li>
-      <li>/</li>
-      <li><%= link_to "Graffiti", maps_graffiti_path %></li>
-      <li>/</li>
-      <li><%= link_to "Street Light Out", maps_street_light_path %></li>
-  </ul>
+      <ul>
+          <li><%= link_to "Home", home_path %></li>
+          <li class="spacer">/</li>
+          <!-- <li><%= link_to "About", about_path %></li>
+          <li class="spacer">/</li> -->
+          <li><%= link_to "Visualize All", maps_all_path %></li>
+          <li class="spacer">/</li>
+          <li><%= link_to "Loud Music/Party", maps_party_path %></li>
+          <li class="spacer">/</li>
+          <li><%= link_to "Dirty Sidewalk", maps_dirty_sidewalk_path %></li>
+          <li class="spacer">/</li>
+          <li><%= link_to "Graffiti", maps_graffiti_path %></li>
+          <li class="spacer">/</li>
+          <li><%= link_to "Street Light Out", maps_street_light_path %></li>
+      </ul>
   </nav>
 
 <%= yield %>
-
-
-<script>
-  (function(){
-    var e = document.createElement('script'); e.type='text/javascript'; e.async = true;
-    e.src = document.location.protocol + '//d1ux67szpr7bp0.cloudfront.net/project-megaphone/widget.min.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s);
-  })();
-</script>
-
 
 </body>
 </html>

@@ -14,5 +14,6 @@ ThreeOneOneGmaps::Application.routes.draw do
  get '/maps/street_light' => 'maps#street_light', as: 'maps_street_light'
 
  get '/complaints/sort_by/:sort_by' => 'complaints#index', as: 'sort_by'
+ get '/maps/about' => 'maps#about', as: 'about'
 
 end
